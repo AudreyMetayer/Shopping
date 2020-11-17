@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+    <ul>
+    {% for product in products %}
+
+        <li> {{ product.name}} - {{ product.category }}</li>
+
+    {% endfor %}
+    </ul>
+
+    <a href="/product/add"><button value="submit">Retour</button></a>
+{% endblock %}
